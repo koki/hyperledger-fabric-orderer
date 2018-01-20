@@ -14,4 +14,4 @@ cd $src_dir/..
 mkdir -p bin
 
 #build a static go binary
-CGO_ENABLED=0 go build -ldflags "-X github.com/koki/hyperledger-fabric-orderer/cmd.GITCOMMIT=$VERSION -extldflags -static -w" -o bin/hyperledger-fabric-orderer
+CGO_ENABLED=1 go build -ldflags "-X github.com/koki/hyperledger-fabric-orderer/cmd.GITCOMMIT=$VERSION -extldflags -static -w" -o bin/hyperledger-fabric-orderer

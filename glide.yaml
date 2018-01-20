@@ -1,0 +1,8 @@
+package: github.com/koki/hyperledger-fabric-orderer
+import:
+- package: github.com/golang/glog
+- package: github.com/hyperledger/fabric
+  version: v1.0.5
+- package: github.com/spf13/cobra
+- package: github.com/miekg/pkcs11
+  version: 2c6cdd29253e84b5f0f1bec7d77cce36f12d15bd
